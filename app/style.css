@@ -1,0 +1,166 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.9),
+    rgba(255, 0, 255, 0.7)
+  );
+  font-family: "Helvetica Now Display", sans-serif;
+}
+
+/* Navigation Styles */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+nav img {
+  width: 200px;
+  mix-blend-mode: screen;
+  filter: saturate(200%) contrast(125%);
+}
+
+nav a {
+  margin-right: 20px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-background {
+  width: 40rem;
+  height: 40rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background-color: #3a3a3a;
+  filter: blur(90px);
+  border-radius: 50%;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: saturate(150%) contrast(125%);
+}
+
+/* Canvas */
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* Text Section */
+.text-section {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  text-align: center;
+}
+
+.text-section h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* Animated Image Section */
+.animated-image-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  padding: 20px;
+}
+
+.animated-image-section img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  animation: zoomIn 2s ease;
+}
+
+/* Video Section */
+.video-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  padding: 20px;
+}
+
+.video-section iframe {
+  max-width: 100%;
+  height: 400px;
+  border: none;
+}
+
+/* Animation Effects */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

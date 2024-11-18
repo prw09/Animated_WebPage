@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyberpunk World</title>
+    <!-- Add this inside the <head> tag -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="bg-black text-white">
+    <div class="main w-full font-['helvetica_Now_Display']">
+      <!-- Navigation -->
+      <nav
+        class="w-full fixed top-0 left-0 px-10 py-3 flex justify-between items-center z-10"
+      >
+        <img
+          class="w-[200px] mix-blend-screen filter saturate-200 contrast-125"
+          src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b"
+          alt="Cyberpunk 2077 Logo"
+        />
+        <div class="flex gap-5 items-center">
+          <a
+            href="/home"
+            class="tracking-tight text-white hover:text-gray-300 transition"
+            >Home</a
+          >
+          <a
+            href="/games"
+            class="tracking-tight text-white hover:text-gray-300 transition"
+            >Games</a
+          >
+          <a
+            href="/about"
+            class="tracking-tight text-white hover:text-gray-300 transition"
+            >About Us</a
+          >
+          <a
+            href="/contact"
+            class="tracking-tight text-white hover:text-gray-300 transition"
+            >Contact</a
+          >
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <div class="relative w-full h-[100vh] overflow-hidden">
+        <div
+          class="w-[40rem] h-[40rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1] rounded-full bg-blue-600 blur-[90px]"
+        ></div>
+
+        <img
+          class="absolute w-full h-full object-cover top-0 left-0 mix-blend-screen filter saturate-150 contrast-125"
+          src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b"
+          alt="Cyberpunk 2077 Logo"
+        />
+
+        <canvas id="canvas"></canvas>
+      </div>
+
+      <!-- New Section: Animation -->
+      <div
+        class="w-full h-[50vh] flex justify-center items-center bg-black text-white"
+      >
+        <div class="text-center animate__animated animate__fadeIn">
+          <h1 class="text-4xl font-bold font-poppins">Experience the Future</h1>
+          <p class="mt-4 text-lg font-poppins">
+            Join us in a world where technology and humanity collide. Explore,
+            fight, and conquer!
+          </p>
+          <p
+            class="mt-8 text-lg animate__animated animate__fadeIn animate__delay-1s animate__slideInLeft font-poppins"
+          >
+            Prepare yourself for the ultimate journey in a cyberpunk world.
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full flex justify-center items-center bg-black">
+        <img
+          class="animate__animated animate__fadeIn animate__zoomIn animate__delay-2s w-full h-auto object-cover transition-all duration-1000"
+          src="https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077UltimateEdition_CDPROJEKTRED_Editions_S1_2560x1440-b8bfbed19257188c717a26ee5bf79b41"
+          alt="Cyberpunk city"
+        />
+      </div>
+
+      <!-- Video Section -->
+      <div class="w-full flex justify-center items-center bg-black mt-5 px-5">
+        <div class="w-full max-w-4xl">
+          <iframe
+            class="w-full h-[60vh] rounded-lg border-none shadow-lg"
+            src="https://www.youtube.com/embed/8X2kIfS6fb8"
+            title="Cyberpunk 2077 Official Trailer"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Footer Section with Hover Effect -->
+      <div class="w-full bg-black text-white py-10">
+        <footer class="text-center group">
+          <p class="group-hover:text-gray-300 transition duration-300">
+            &copy; 2024 Cyberpunk World. All Rights Reserved.
+          </p>
+        </footer>
+      </div>
+
+      <!-- New Section: Features -->
+      <div class="w-full bg-gray-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-10">Our Features</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div
+              class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
+            >
+              <h3 class="text-2xl font-semibold mb-4">Innovative Gameplay</h3>
+              <p class="text-lg">
+                Experience futuristic technology and thrilling combat mechanics.
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
+            >
+              <h3 class="text-2xl font-semibold mb-4">Dynamic World</h3>
+              <p class="text-lg">
+                Explore a vibrant city with engaging storylines and quests.
+              </p>
+            </div>
+            <div
+              class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
+            >
+              <h3 class="text-2xl font-semibold mb-4">Multiplayer Mode</h3>
+              <p class="text-lg">
+                Join forces with friends or compete against others in
+                multiplayer battles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
